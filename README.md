@@ -3,8 +3,12 @@ smart car using ROS system, udp and ndn
 # ROSProject
 This project is a multi-robot slam under ROS Indigo, with the environment ubuntu 14.04 LTS. There are two lasers UTM-30LX-EW to scan. The two cars start from the same place and seperate at the fork. They can communicate and match what they have scaned from the start. After the fork, the two cars continue to transform new data on the way and struct a complete map with each other's information.
 
+![image](https://github.com/liby3/ROSProjet/mrslam/photos/car.jpg)
+
 # 1.	Environment
 The machine we used must be Ubuntu 14.04 LTS, with a RAM more than 4GB. Then we can install ROS Indigo on it.
+
+![image](https://github.com/liby3/ROSProjet/mrslam/photos/laser.jpg)
 
 ## 1.1.	ROS Indigo Basic Installation
 

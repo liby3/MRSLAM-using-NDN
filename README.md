@@ -51,7 +51,8 @@ This is only a demo for ndn. We establish two basic sets, consumer and producer.
 -	Set two machines and set their IPs in the same net so that they can ping each other. AP or ad-hoc is available. We assume car 1 is 10.0.0.2 and car 2 is 10.0.0.3.
 -	Execute 
 
-	nfd-start
+
+		nfd-start
 
 	on both machines.
 -	on machine 1: 
@@ -65,9 +66,12 @@ This is only a demo for ndn. We establish two basic sets, consumer and producer.
 
 	nfdc set-strategy ndn:/example /localhost/nfd/strategy/multicast
 -	We assume machine 1 producer, machine 2 consumer:
+
 	on machine 1:
 
 		sudo ./producer ndn:/example
+
 	on machine 2:
+		
 		sudo ./consumer ndn:/example/testFromM2/ -f -p -w 1000
 

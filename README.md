@@ -57,14 +57,14 @@ This is only a demo for ndn. We establish two basic sets, consumer and producer.
 	on both machines.
 -	on machine 1: 
 	
-	nfdc register ndn:/example/ udp://10.0.0.3
+		nfdc register ndn:/example/ udp://10.0.0.3
 
-	nfdc set-strategy ndn:/example /localhost/nfd/strategy/multicast
+		fdc set-strategy ndn:/example /localhost/nfd/strategy/multicast
 -	on machine 2:
 	
-	nfdc register ndn:/example/ udp://10.0.0.2
+		nfdc register ndn:/example/ udp://10.0.0.2
 
-	nfdc set-strategy ndn:/example /localhost/nfd/strategy/multicast
+		nfdc set-strategy ndn:/example /localhost/nfd/strategy/multicast
 -	We assume machine 1 producer, machine 2 consumer:
 
 	on machine 1:

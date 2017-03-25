@@ -52,14 +52,14 @@ This is only a demo for ndn. We establish two basic sets, consumer and producer.
 -	Execute 
 
 
-		nfd-start
+		sudo nfd-start
 
 	on both machines.
 -	on machine 1: 
 	
 		nfdc register ndn:/example/ udp://10.0.0.3
 
-		fdc set-strategy ndn:/example /localhost/nfd/strategy/multicast
+		nfdc set-strategy ndn:/example /localhost/nfd/strategy/multicast
 -	on machine 2:
 	
 		nfdc register ndn:/example/ udp://10.0.0.2

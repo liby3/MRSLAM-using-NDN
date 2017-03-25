@@ -64,7 +64,37 @@ You can find a folder named "src", after make, you will find another two folders
 
 	sudo apt-get install libsuitesparse-dev
 
-	sudo apt-get install freeglut3-dev
+	sudo apt-get install libeigen3-dev
+
+	sudo apt-get install libqt4-dev qt4-qmake
+
+	sudo apt-get install libqglviewer-dev
+
+	git clone https://github.com/gaoxiang12/g2o.git
+
+	cd g2o
+
+	mkdir build
+
+	cd build
+
+	cmake ../
+	
+	make
+
+	sudo make install
+
+After you have installed g2o, you should set your g2o environment.
+
+	export G2O_ROOT=/usr/local
+    
+	export G2O_BIN=${G2O_ROOT}/bin  
+    
+	export G2O_LIB=${G2O_ROOT}/lib  
+    
+	export LD_LIBRARY_PATH=${G2O_LIB}:${LD_LIBRARY_PATH}  
+    
+	export PATH=${G2O_BIN}:${PATH}   
 
 ## 1.3.	Make
 

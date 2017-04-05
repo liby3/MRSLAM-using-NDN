@@ -21,12 +21,14 @@ mrslam是基于多车建图的基本代码，在ubuntu14.04LTS下配置ROS环境
 4.	[Multi-robot SLAM and Map Merging](http://tv.uvigo.es/uploads/material/Video/2662/P05.pdf)
 5.	[DDF-SAM: Fully Distributed SLAM using Constrained Factor Graphs](http://www.cc.gatech.edu/~dellaert/pub/Cunningham10iros.pdf)
 6.	[Tartan Racing: A Multi-Modal Approach to the DARPAUrban Challenge](https://www.researchgate.net/publication/228542929_Tartan_Racing_A_multi-modal_approach_to_the_DARPA_Urban_Challenge)
+7.	[Coordinated Multi-Robot Exploration: Out of the Box Packages for ROS](http://data.bettstetter.com/publications/andre-2014-wiuav-ros.pdf)
 
 ## 3.	参考
 
 1.	https://github.com/xpharry/MultiRobotSLAM
 2.	https://github.com/mtlazaro/cg_mrslam
-3.	http://www.cnblogs.com/gaoxiang12/
+3.	http://wiki.ros.org/cn/ROS/Tutorials
+4.	http://www.cnblogs.com/gaoxiang12/
 
 	
 

@@ -14,14 +14,17 @@ class Motor {
 private:
 	int fd;
 public:
-	Motor();
+	Motor(char *portname);
 	int set_interface_attribs (int fd, int speed, int parity);
 	void set_blocking(int fd, int should_block);
 	void turn(char command);
-	void turnLeftAround();
-	void turnRightAround();
-	void turnLeftHalf();
-	void turnRightHalf();
+	void turnCWLow();
+	void turnCWMiddle();
+	void turnCWHigh();
+	void turnACWLow();
+	void turnACWMiddle();
+	void turnACWHigh();
+	void stop();
 	~Motor();
 };
 #endif

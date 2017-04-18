@@ -1,7 +1,7 @@
 #include "Motor.h"
 
-Motor::Motor() {
-	char *portname = "/dev/ttyACM0";
+Motor::Motor(char *portname) {
+	//char *portname = "/dev/ttyACM0";
     fd = open (portname, O_RDWR | O_NOCTTY | O_SYNC);
     if (fd < 0) {
         printf("error %d opening %s: %s", errno, portname, strerror (errno));
@@ -14,45 +14,72 @@ Motor::Motor() {
 
 void Motor::turn(char command) {
 	switch(command) {
-		case 'L':
-			turnLeftAround();
+		case 'A':
+			turnACWLow();
 			break;
-		case 'R':
-			turnRightAround();
+		case 'B':
+			turnCWLow();
 			break;
-		case 'l':
-			turnLeftHalf();
+		case 'C':
+			turnACWMiddle();
 			break;
-		case 'r':
-			turnRightHalf();
+		case 'D':
+			turnCWMiddle();
 			break;
+        case 'E':
+            turnACWHigh();
+            break;
+        case 'F':
+            turnCWHigh();
+            break;
+        case 'S':
+            stop();
+            break;
 		default:
 			break;
 	}
 }
 
 
-void Motor::turnLeftAround() {
-	write(fd, "L", 1);
+void Motor::turnCWLow() {
+	write(fd, "B", 1);
 	usleep(1000);
 }
 
 
-void Motor::turnRightAround() {
-	write(fd, "R", 1);
+void Motor::turnCWMiddle() {
+	write(fd, "D", 1);
 	usleep(1000);
 }
 
 
-void Motor::turnLeftHalf() {
-	write(fd, "l", 1);
+void Motor::turnCWHigh() {
+	write(fd, "F", 1);
 	usleep(1000);
 }
 
 
-void Motor::turnRightHalf() {
-	write(fd, "r", 1);
+void Motor::turnACWLow() {
+	write(fd, "A", 1);
 	usleep(1000);
+}
+
+
+void Motor::turnACWMiddle() {
+    write(fd, "C", 1);
+    usleep(1000);
+}
+
+
+void Motor::turnACWHigh() {
+    write(fd, "E", 1);
+    usleep(1000);
+}
+
+
+void Motor::stop() {
+    write(fd, "S", 1);
+    usleep(1000);
 }
 
 

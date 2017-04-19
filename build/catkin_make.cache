@@ -1,2 +1,0 @@
-cg_mrslam:g2o2ros:laser_proc:laser_scan_matcher:ndn_ros:odom_tf_package:urg_c:urg_node
--DCATKIN_DEVEL_PREFIX=/home/liby3/catkin_ws_lby/devel -DCMAKE_INSTALL_PREFIX=/home/liby3/catkin_ws_lby/install -G Unix Makefiles

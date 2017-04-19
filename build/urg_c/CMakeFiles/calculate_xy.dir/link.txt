@@ -1,1 +1,0 @@
-/usr/bin/cc      CMakeFiles/calculate_xy.dir/current/samples/calculate_xy.c.o  -o /home/liby3/catkin_ws_lby/devel/lib/urg_c/calculate_xy -rdynamic /home/liby3/catkin_ws_lby/devel/lib/libliburg_c.so /home/liby3/catkin_ws_lby/devel/lib/libopen_urg_sensor.so /home/liby3/catkin_ws_lby/devel/lib/libliburg_c.so -lrt -lm -Wl,-rpath,/home/liby3/catkin_ws_lby/devel/lib: 

@@ -1,1 +1,0 @@
-/usr/bin/cc    -I/usr/include  -I/usr/include/cairo -std=c99 -fPIC -ggdb -Wall    CMakeFiles/test2.dir/test2.o  -o test2 -rdynamic /home/liby3/catkin_ws_lby/devel/lib/libjson-c.a 

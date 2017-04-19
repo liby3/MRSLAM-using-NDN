@@ -1,1 +1,0 @@
-/usr/bin/cc    -I/usr/include  -I/usr/include/cairo -std=c99 -fPIC -ggdb -Wall    CMakeFiles/ld_noise.dir/apps/ld_noise.o  -o ld_noise -rdynamic /home/liby3/catkin_ws_lby/devel/lib/libcsm-static.a -L. -L/usr/lib -L/usr/lib -lgsl -lgslcblas -lm /usr/lib/i386-linux-gnu/libcairo.so 

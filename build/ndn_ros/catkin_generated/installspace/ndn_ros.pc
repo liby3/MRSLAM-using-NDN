@@ -1,8 +1,0 @@
-prefix=/home/liby3/catkin_ws_lby/install
-
-Name: ndn_ros
-Description: Description of ndn_ros
-Version: 0.0.0
-Cflags: -I/home/liby3/catkin_ws_lby/install/include
-Libs: -L/home/liby3/catkin_ws_lby/install/lib 
-Requires: roscpp std_msgs message_runtime

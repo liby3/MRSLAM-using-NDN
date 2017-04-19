@@ -1,2 +1,0 @@
-/usr/bin/ar cr /home/liby3/catkin_ws_lby/devel/lib/libegsl.a  CMakeFiles/egsl.dir/egsl.o CMakeFiles/egsl.dir/egsl_ops.o CMakeFiles/egsl.dir/egsl_conversions.o CMakeFiles/egsl.dir/egsl_misc.o
-/usr/bin/ranlib /home/liby3/catkin_ws_lby/devel/lib/libegsl.a

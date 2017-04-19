@@ -1,8 +1,0 @@
-prefix=/home/liby3/catkin_ws_lby/devel
-
-Name: urg_c
-Description: Description of urg_c
-Version: 1.0.404
-Cflags: -I/home/liby3/catkin_ws_lby/src/urg_c/current/include
-Libs: -L/home/liby3/catkin_ws_lby/devel/lib -lliburg_c
-Requires: 

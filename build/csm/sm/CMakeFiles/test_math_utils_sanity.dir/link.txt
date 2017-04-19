@@ -1,0 +1,1 @@
+/usr/bin/cc    -I/usr/include  -I/usr/include/cairo -std=c99 -fPIC -ggdb -Wall    CMakeFiles/test_math_utils_sanity.dir/csm/test_math_utils_sanity.o  -o test_math_utils_sanity -rdynamic /home/liby3/catkin_ws_lby/devel/lib/libcsm-static.a -L/usr/lib -lgsl -lgslcblas -lm -L. -L/usr/lib -L/usr/lib -lgsl -lgslcblas -lm /usr/lib/i386-linux-gnu/libcairo.so 

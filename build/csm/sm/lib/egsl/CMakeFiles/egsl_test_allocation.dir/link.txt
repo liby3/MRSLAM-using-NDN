@@ -1,0 +1,1 @@
+/usr/bin/cc    -I/usr/include  -I/usr/include/cairo -std=c99 -fPIC -ggdb -Wall    CMakeFiles/egsl_test_allocation.dir/egsl_test_allocation.o  -o egsl_test_allocation -rdynamic /home/liby3/catkin_ws_lby/devel/lib/libegsl.a -L/usr/lib -lgsl -lgslcblas -lm 

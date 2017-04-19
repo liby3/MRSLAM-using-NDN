@@ -1,0 +1,8 @@
+prefix=/home/liby3/catkin_ws_lby/devel
+
+Name: urg_node
+Description: Description of urg_node
+Version: 0.1.9
+Cflags: -I/home/liby3/catkin_ws_lby/devel/include -I/home/liby3/catkin_ws_lby/src/urg_node/include
+Libs: -L/home/liby3/catkin_ws_lby/devel/lib -lurg_c_wrapper
+Requires: roscpp sensor_msgs urg_c rosconsole nodelet dynamic_reconfigure laser_proc

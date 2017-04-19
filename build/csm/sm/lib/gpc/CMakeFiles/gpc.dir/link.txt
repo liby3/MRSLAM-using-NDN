@@ -1,0 +1,2 @@
+/usr/bin/ar cr /home/liby3/catkin_ws_lby/devel/lib/libgpc.a  CMakeFiles/gpc.dir/gpc.o CMakeFiles/gpc.dir/gpc_utils.o
+/usr/bin/ranlib /home/liby3/catkin_ws_lby/devel/lib/libgpc.a

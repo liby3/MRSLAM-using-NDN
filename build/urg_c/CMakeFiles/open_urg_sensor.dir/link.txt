@@ -1,0 +1,1 @@
+/usr/bin/cc  -fPIC    -shared -Wl,-soname,libopen_urg_sensor.so -o /home/liby3/catkin_ws_lby/devel/lib/libopen_urg_sensor.so CMakeFiles/open_urg_sensor.dir/current/samples/open_urg_sensor.c.o -lm /home/liby3/catkin_ws_lby/devel/lib/libliburg_c.so -lrt -lm -Wl,-rpath,/home/liby3/catkin_ws_lby/devel/lib: 

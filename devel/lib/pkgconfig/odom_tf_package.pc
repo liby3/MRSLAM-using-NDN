@@ -1,0 +1,8 @@
+prefix=/home/liby3/catkin_ws_lby/devel
+
+Name: odom_tf_package
+Description: Description of odom_tf_package
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/liby3/catkin_ws_lby/devel/lib 
+Requires: 

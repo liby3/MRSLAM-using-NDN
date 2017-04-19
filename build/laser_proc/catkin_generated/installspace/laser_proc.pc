@@ -1,0 +1,8 @@
+prefix=/home/liby3/catkin_ws_lby/install
+
+Name: laser_proc
+Description: Description of laser_proc
+Version: 0.1.4
+Cflags: -I/home/liby3/catkin_ws_lby/install/include
+Libs: -L/home/liby3/catkin_ws_lby/install/lib -llaser_proc_library -llaser_publisher -llaser_transport -llaser_proc_ROS -lLaserProcNodelet
+Requires: roscpp sensor_msgs rosconsole nodelet

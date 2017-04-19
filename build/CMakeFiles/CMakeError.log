@@ -1,0 +1,73 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/liby3/catkin_ws_lby/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1907952495/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1907952495.dir/build.make CMakeFiles/cmTryCompileExec1907952495.dir/build
+make[1]: Entering directory `/home/liby3/catkin_ws_lby/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liby3/catkin_ws_lby/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1907952495.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1907952495.dir/CheckSymbolExists.c.o   -c /home/liby3/catkin_ws_lby/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1907952495
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1907952495.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1907952495.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1907952495 -rdynamic 
+CMakeFiles/cmTryCompileExec1907952495.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0xa): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1907952495] Error 1
+make[1]: Leaving directory `/home/liby3/catkin_ws_lby/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1907952495/fast] Error 2
+
+File /home/liby3/catkin_ws_lby/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/liby3/catkin_ws_lby/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3884293951/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3884293951.dir/build.make CMakeFiles/cmTryCompileExec3884293951.dir/build
+make[1]: Entering directory `/home/liby3/catkin_ws_lby/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liby3/catkin_ws_lby/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3884293951.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3884293951.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3884293951
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3884293951.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec3884293951.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3884293951 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec3884293951] Error 1
+make[1]: Leaving directory `/home/liby3/catkin_ws_lby/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3884293951/fast] Error 2
+
+
+Determining if the function strubded exists failed with the following output:
+Change Dir: /home/liby3/catkin_ws_lby/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1609362387/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1609362387.dir/build.make CMakeFiles/cmTryCompileExec1609362387.dir/build
+make[1]: Entering directory `/home/liby3/catkin_ws_lby/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liby3/catkin_ws_lby/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1609362387.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -I/usr/include  -I/usr/include/cairo -std=c99 -fPIC -ggdb -Wall -DCHECK_FUNCTION_EXISTS=strubded   -o CMakeFiles/cmTryCompileExec1609362387.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1609362387
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1609362387.dir/link.txt --verbose=1
+/usr/bin/cc    -I/usr/include  -I/usr/include/cairo -std=c99 -fPIC -ggdb -Wall -DCHECK_FUNCTION_EXISTS=strubded    CMakeFiles/cmTryCompileExec1609362387.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1609362387 -rdynamic 
+CMakeFiles/cmTryCompileExec1609362387.dir/CheckFunctionExists.c.o: In function `main':
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:11: undefined reference to `strubded'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1609362387] Error 1
+make[1]: Leaving directory `/home/liby3/catkin_ws_lby/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1609362387/fast] Error 2
+
+

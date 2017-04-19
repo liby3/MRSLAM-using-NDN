@@ -1,0 +1,8 @@
+prefix=/home/liby3/catkin_ws_lby/install
+
+Name: g2o2ros
+Description: Description of g2o2ros
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/liby3/catkin_ws_lby/install/lib 
+Requires: 

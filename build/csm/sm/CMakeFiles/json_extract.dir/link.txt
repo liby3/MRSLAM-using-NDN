@@ -1,0 +1,1 @@
+/usr/bin/cc    -I/usr/include  -I/usr/include/cairo -std=c99 -fPIC -ggdb -Wall    CMakeFiles/json_extract.dir/apps/json_extract.o  -o json_extract -rdynamic /home/liby3/catkin_ws_lby/devel/lib/libcsm-static.a -L. -L/usr/lib -L/usr/lib -lgsl -lgslcblas -lm /usr/lib/i386-linux-gnu/libcairo.so 

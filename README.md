@@ -1,10 +1,14 @@
 # ROSProjet
 smart car using ROS system, udp and ndn
 # ROSProject
-This project is a multi-robot slam under ROS Indigo, with the environment ubuntu 14.04 LTS. There are two lasers UTM-30LX-EW to scan. The two cars start from the same place and seperate at the fork. They can communicate and match what they have scaned from the start. After the fork, the two cars continue to transform new data on the way and struct a complete map with each other's information.
+This project is a multi-robot slam under ROS Indigo, with the environment ubuntu 14.04 LTS. There are two lasers UTM-30LX-EW to scan. The two cars start from the same place and seperate at the fork. They can communicate and match what they have scaned from the start. After the fork, the two cars continue to transform new data on the way and struct a complete map with each other's information. A related paper can be found [here.](http://ieeexplore.ieee.org/abstract/document/6696483/)
+
+![car](https://github.com/liby3/ROSProjet/blob/mrslam/photos/car.jpg)
 
 # 1.	Environment
 The machine we used must be Ubuntu 14.04 LTS, with a RAM more than 4GB. Then we can install ROS Indigo on it.
+
+![laser](https://github.com/liby3/ROSProjet/blob/mrslam/photos/laser.jpg)
 
 ## 1.1.	ROS Indigo Basic Installation
 
@@ -60,7 +64,37 @@ You can find a folder named "src", after make, you will find another two folders
 
 	sudo apt-get install libsuitesparse-dev
 
-	sudo apt-get install freeglut3-dev
+	sudo apt-get install libeigen3-dev
+
+	sudo apt-get install libqt4-dev qt4-qmake
+
+	sudo apt-get install libqglviewer-dev
+
+	git clone https://github.com/gaoxiang12/g2o.git
+
+	cd g2o
+
+	mkdir build
+
+	cd build
+
+	cmake ../
+	
+	make
+
+	sudo make install
+
+After you have installed g2o, you should set your g2o environment.
+
+	export G2O_ROOT=/usr/local
+    
+	export G2O_BIN=${G2O_ROOT}/bin  
+    
+	export G2O_LIB=${G2O_ROOT}/lib  
+    
+	export LD_LIBRARY_PATH=${G2O_LIB}:${LD_LIBRARY_PATH}  
+    
+	export PATH=${G2O_BIN}:${PATH}   
 
 ## 1.3.	Make
 

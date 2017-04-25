@@ -68,5 +68,14 @@ mrslam是基于多车建图的基本代码，在ubuntu14.04LTS下配置ROS环境
 ![node](https://github.com/liby3/ROSProjet/blob/mrslam/photos/NodeCommunication.png)
 
 
+##	4.	Bagfiles
+
+	laser datas for mrslam test.
+
+baidu cloud: https://pan.baidu.com/s/1eSj77Xo
+
+
+
+
 	
 
